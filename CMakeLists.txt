@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(robotino_interfaces)
+project(robotino_interfaces VERSION 1.1.0)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,13 +7,22 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
                            "msg/MotorPositions.msg"
                            "msg/MotorVelocities.msg"
                            "msg/MotorCurrents.msg"
-                           "msg/DistanceSensorVoltages.msg")
+                           "msg/DistanceSensorVoltages.msg"
+                           "msg/MotorPositionsStamped.msg"
+                           "msg/MotorVelocitiesStamped.msg"
+                           "msg/MotorCurrentsStamped.msg"
+                           "msg/DistanceSensorVoltagesStamped.msg"
+                           "msg/StringStamped.msg"
+                           "srv/PredictSurface.srv"
+                           "srv/PredictSlippage.srv"
+                           DEPENDENCIES std_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

@@ -1,0 +1,4 @@
+float32[3] mot_vel
+float32[3] mot_cur
+---
+string surf_type

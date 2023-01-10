@@ -1,0 +1,2 @@
+std_msgs/Header header
+robotino_interfaces/MotorPositions mot_pos
