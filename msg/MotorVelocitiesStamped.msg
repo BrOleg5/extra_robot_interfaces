@@ -1,2 +1,0 @@
-std_msgs/Header header
-robotino_interfaces/MotorVelocities mot_vel
