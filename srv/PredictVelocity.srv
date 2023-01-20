@@ -1,0 +1,6 @@
+float32[3] set_vel
+float32[3] act_vel
+float32[3] act_cur
+string surf_type
+---
+float32[3] wheel_vel

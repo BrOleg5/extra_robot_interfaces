@@ -1,9 +1,9 @@
-# source: sensor_msgs/JointState.msg
+# Inspired sensor_msgs/JointState.msg
 
 # This is a message that holds data to describe the state of a set of motors. 
 #
 # The state of each motor is defined by:
-#  * the position of the motor (encoder ticks) (in future will be rad)
+#  * the position of the motor (rad)
 #  * the velocity of the motor (rad/s)
 #  * the current of motor (A).
 #
@@ -26,3 +26,4 @@ string[3] name
 int32[3] position
 float32[3] velocity
 float32[3] current
+float32[3] velocity_set_point

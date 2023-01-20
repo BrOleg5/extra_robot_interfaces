@@ -1,4 +1,0 @@
-float32[3] mot_vel
-string surf_type
----
-float32[3] wheel_slip
