@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>robotino_interfaces</name>
-  <version>2.1.0</version>
-  <description>Robotino ROS2 messages and services</description>
+  <name>extra_robot_interfaces</name>
+  <version>3.0.0</version>
+  <description>Extra interfaces for robot that may be useful</description>
   <maintainer email="oleg.brylyov@mail.ru">BrOleg5</maintainer>
   <license>Apache License 2.0</license>
   <author>BrOleg5</author>

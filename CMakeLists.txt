@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(robotino_interfaces VERSION 2.1.0)
+project(extra_robot_interfaces VERSION 3.0.0)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -11,13 +11,9 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-                           "msg/SlippageStamped.msg"
                            "msg/Efficiency.msg"
                            "msg/Range.msg"
                            "msg/MotorState.msg"
-                           "msg/StringStamped.msg"
-                           "srv/PredictSurface.srv"
-                           "srv/PredictVelocity.srv"
                            DEPENDENCIES std_msgs)
 
 if(BUILD_TESTING)
