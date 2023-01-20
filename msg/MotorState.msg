@@ -22,8 +22,8 @@
 
 std_msgs/Header header
 
-string[3] name
-int32[3] position
-float32[3] velocity
-float32[3] current
-float32[3] velocity_set_point
+string[] name
+int32[] position
+float32[] velocity
+float32[] current
+float32[] velocity_set_point

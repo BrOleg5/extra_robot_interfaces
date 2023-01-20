@@ -10,15 +10,15 @@
 # These sensors follow REP 117 and will output -Inf if the object is detected
 # and +Inf if the object is outside of the detection range.
 
-std_msgs/Header header  # timestamp in the header is the time the ranger
-                        # returned the distance reading
+std_msgs/Header header  # timestamp in the header is the time the rangers
+                        # returned the distance readings
 
 # Radiation type enums
 # If you want a value added to this list, send an email to the ros-users list
 uint8 ULTRASOUND=0
 uint8 INFRARED=1
 
-uint8 radiation_type      # the type of radiation used by the sensor
+uint8 radiation_type      # the type of radiation used by the sensors
                           # (sound, IR, etc) [enum]
 
 float32 field_of_view     # the size of the arc that the distance reading is
@@ -32,7 +32,7 @@ float32 min_range         # minimum range value [m]
 float32 max_range         # maximum range value [m]
                           # Fixed distance rangers require min_range==max_range
 
-float32[9] range           # range data [m]
+float32[] range           # range data [m]
                           # (Note: values < range_min or > range_max
                           # should be discarded)
                           # Fixed distance rangers only output -Inf or +Inf.
