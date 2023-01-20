@@ -13,11 +13,11 @@ This ROS2 package contains definition of extra interfaces for robots that may be
 Unix-like system (Ubuntu, Debian)
 
 ```bash
-colcon build --symlink-install --package-select extra-robot-interfaces
+colcon build --symlink-install --package-select extra_robot_interfaces
 ```
 
 Windows
 
 ```bash
-colcon build --symlink-install --merge-install --package-select extra-robot-interfaces
+colcon build --symlink-install --merge-install --package-select extra_robot_interfaces
 ```
