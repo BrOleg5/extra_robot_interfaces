@@ -1,6 +1,7 @@
-float32[3] set_vel
-float32[3] act_vel
-float32[3] act_cur
-string surf_type
+float32[3] set_vel # set-point velocity of motors
+float32[3] act_vel # actual velocity of motors
+float32[3] act_cur # actual current of motors
+string surf_type # actual surface type the robot is on
 ---
-float32[3] wheel_vel
+float32[3] wheel_vel # effective velocity of a set of wheels
+# Effective velocity of wheel is a wheel velocity excluding wheel slippage

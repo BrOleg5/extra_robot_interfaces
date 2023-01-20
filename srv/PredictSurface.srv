@@ -1,4 +1,4 @@
-float32[3] mot_vel
-float32[3] mot_cur
+float32[3] mot_vel # velocity of a set of motors
+float32[3] mot_cur # current of a set of motors
 ---
-string surf_type
+string surf_type # surface type the robot is on

@@ -1,11 +1,11 @@
-# Inspired sensor_msgs/JointState.msg
+# Inspired by sensor_msgs/JointState.msg
 
 # This is a message that holds data to describe the state of a set of motors. 
 #
 # The state of each motor is defined by:
 #  * the position of the motor (rad)
 #  * the velocity of the motor (rad/s)
-#  * the current of motor (A).
+#  * the current of the motor (A).
 #
 # Each motor is uniquely identified by its name
 # The header specifies the time at which the motor states were recorded. All the motor states
