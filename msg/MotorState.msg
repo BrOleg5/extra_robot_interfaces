@@ -23,7 +23,7 @@
 std_msgs/Header header
 
 string[] name
-int32[] position
+float32[] position
 float32[] velocity
 float32[] current
 float32[] velocity_set_point

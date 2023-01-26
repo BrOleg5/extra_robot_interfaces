@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.8)
-project(extra_robot_interfaces VERSION 3.0.0)
+
+include("cmake/read_package_version.cmake")
+read_package_version_from_xml()
+
+project(extra_robot_interfaces VERSION ${PACKAGE_VERSION})
+
+unset(PACKAGE_VERSION)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
